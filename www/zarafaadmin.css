@@ -1,0 +1,319 @@
+/*General Settings*/
+body, div, p, link, td, option, li, ol, ul  
+{
+	color:black; 
+	font-size: 10px;
+
+	font-family:"Trebuchet MS", Arial, Helvetica, Geneva, Swiss, SunSans-Regular;
+}
+select, input, textarea 
+{
+	color: black; 
+	font-size: 9px;
+	line-height: 1em; 
+	font-family: "Trebuchet MS", Arial, Helvetica, Geneva, Swiss, SunSans-Regular;
+}
+a
+{
+	color:#039; 
+	font-family:"Trebuchet MS", Arial, Helvetica, Geneva, Swiss, SunSans-Regular; 
+	text-decoration: underline
+}
+html, body
+{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+
+a:link, a:visited
+{
+    text-decoration: none;
+}
+
+a:hover, a:active 
+{
+    text-decoration: underline;
+}
+
+
+/*Settings for Page Header and Side Panel*/
+#frame-wrapper
+{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+#frame-header
+{
+	background: url(/images/header-line.gif) left top repeat-x black;
+	height: 56px;
+	overflow: hidden;
+}
+
+#header-panel
+{
+	background: url(/images/header-backgnd.gif) scroll 0% 0% no-repeat transparent;
+	height: 56px;
+}
+
+#header-title1
+{
+	float: left;
+	height: 56px;
+	padding-top: 3px;
+	padding-left: 14px;
+	font-size: 1.6em;
+	color: white;
+}
+
+#header-title2
+{
+	float: left;
+	height: 56px;
+	padding-left: 40px;
+	padding-top: 36px;
+	font-size: 1.2em;
+	color: black;
+}
+
+#header-opwlogo
+{
+	background: transparent url(/images/header-opwlogo.jpg) right top no-repeat;
+	height: 60px;
+	padding-top: 37px;
+	padding-right: 65px;
+	color: #3A3B38;
+	text-align: right;
+}
+
+#frame-table
+{
+	overflow: scroll;
+	width: 100%;
+	border: 0px;
+	border-collapse: collapse;	
+	height: 90%;
+}
+
+#table-header
+{
+	background-color: #EFEEE9;
+	border-bottom: #999999 solid 1px;
+  font-size: 10px;
+	white-space: nowrap;
+	text-align: left;
+}
+
+#table-user
+{
+	background-color: #EFEEE9;
+	border-bottom: #999999 solid 1px;
+  font-size: 10px;
+	white-space: nowrap;
+	text-align: right;
+}
+
+#table-commands
+{
+	background-color: white;
+	text-align: left;
+	vertical-align: top;
+	width: 150px;
+	height: 100%;
+	white-space: nowrap;
+ 	margin-left:10px;
+	margin-top: 1cm;
+}
+
+#table-results
+{
+	text-align: left;
+	vertical-align: top;
+	height: 100%;
+ 	margin-left: 150px;
+	margin-top: 1cm;
+}
+
+#cmdiframe
+{
+	text-align: left;
+	vertical-align: top;
+	width: 100%;	
+	height: 100%;
+	border: none;
+}
+
+#blankpage
+{
+	float: left;
+	height: 100%;
+	width: 100%;	
+  font-size: 16px;
+	color: black;
+	text-align: center;
+	vertical-align: middle;	
+}
+
+.LightRow
+{
+	background-color: white;
+}
+
+.DarkRow
+{
+	background-color: #EFEEE9;
+}
+
+
+
+/* General */
+#loading {
+  display: block;	
+	width: 120px; 
+	height: 20px; 
+	z-index: 9999;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-top: -10px;
+	margin-left: -60px;
+}
+
+.entry { background: #FFF; }
+.entry:hover { background: #BBB; }
+
+.number { text-align: right; }
+
+.warn { color: orange; font-weight: bold; }
+.soft { color: red; }
+.hard { color: red; font-weight: bold; }
+.red  { color: red; }
+
+tr.hover:hover { background: #BBB }
+td.hover:hover { background: #BBB }
+
+
+/* Logs */
+.logdata
+{
+	color:black; 
+ 	font-size: 8px;
+	font-family: "Courier New", Courier, monospace;
+	text-align: left;
+}
+
+.logdata:hover 
+{ 
+	background: #BBB;
+	font-weight: bold;
+}
+
+
+/* Users */
+#zarafa-users
+{
+	width: 100%;
+	border-collapse: collapse;	
+}
+
+#zarafa-license
+{
+	border-collapse: collapse;	
+}
+
+#zarafa-user, #zarafa-user-quota
+{
+ 	min-width: 500px;	
+	border-collapse: collapse;	
+}
+
+/* Groups */
+#zarafa-groups, #zarafa-group
+{
+	min-width: 500px;	
+	border-collapse: collapse;	
+}
+
+/* Mobile Devices */
+#zarafa-devices, #zarafa-device, #zarafa-device-errors, #zarafa-device-actions
+{
+	min-width: 600px;	
+	border-collapse: collapse;	
+}
+
+/* Zarafa System and Sessions */
+#zarafa-system, #zarafa-session
+{
+	min-width: 600px;	
+	border-collapse: collapse;	
+}
+
+/* Login Errors */
+#zarafa-login-errors
+{
+	min-width: 500px;	
+	border-collapse: collapse;	
+}
+/*#entry tr { background: #FFF; }
+*/
+#zarafa-login-errors th { padding: 0px 10px 0px 10px; white-space: nowrap; }
+#zarafa-login-errors td { padding: 0px 10px 0px 10px; white-space: nowrap; }
+#zarafa-login-errors tr.hover:hover { background: #BBB }
+
+#zarafa-login-errors tr.hide { display: none; }
+#zarafa-login-errors tr.show { display: table-row; }
+
+
+/* Email List */
+#zarafa-emails
+{
+	min-width: 500px;	
+	border-collapse: collapse;	
+}
+/*#entry tr { background: #FFF; }
+*/
+#zarafa-emails caption { padding: 0px 10px 0px 10px; white-space: nowrap; }
+#zarafa-emails th { padding: 0px 10px 0px 10px; white-space: nowrap; vertical-align: bottom; }
+#zarafa-emails td { padding: 0px 10px 0px 10px; white-space: nowrap; }
+#zarafa-emails tr.hover:hover { background: #BBB }
+
+#zarafa-emails tr.hide { display: none; }
+#zarafa-emails tr.show { display: table-row; }
+
+
+#zarafa-emails-totals
+{
+	border-collapse: collapse;		
+}
+#zarafa-emails-totals th { padding: 0px 0px 0px 0px; white-space: nowrap; vertical-align: top; }
+
+
+/* OOO Input */
+#ooo-mode, #ooo-from, #ooo-until, #ooo-subject, #ooo-message, #ooo-cancel, #ooo-submit
+{
+	font-size: 10px; 
+	font-family:"Trebuchet MS", Arial, Helvetica, Geneva, Swiss, SunSans-Regular;
+	width: 100%;
+	resize: none;	
+}
+.ooo-title
+{
+	padding: 10px 10px 10px 10px;
+	text-align: center;
+	font-size: 16px; 
+}
+
+#ooo-table
+{
+  margin-left: auto; 
+  margin-right: auto;
+  min-width: 500px;	
+	border-collapse: collapse;	
+}
+
+div.ui-datepicker{
+ font-size: 8px;
+}
